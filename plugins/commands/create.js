@@ -99,6 +99,8 @@ module.exports = () => ({
                 if (data.file === undefined || data.file.length !== 2) {
                     return reply(boom.badRequest('Posted invalid number of files.'));
                 }
+                console.log('###DATA###');
+                console.log(data);
                 data.file.forEach((file) => {
                     console.log('###FileType###');
                     console.log(typeof file);
