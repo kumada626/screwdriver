@@ -86,6 +86,7 @@ module.exports = () => ({
         },
         payload: {
             parse: true,
+            maxBytes: 1073741824,
             allow: ['multipart/form-data', 'application/json']
         },
         handler: (request, reply) => {
