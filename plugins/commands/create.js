@@ -99,6 +99,10 @@ module.exports = () => ({
                     return reply(boom.badRequest('Posted invalid number of files.'));
                 }
                 data.file.forEach((file) => {
+                    console.log('###FileType###');
+                    console.log(typeof file);
+                    console.log('###FILE###');
+                    console.log(file);
                     if (typeof file === 'string') {
                         commandSpec = file;
                     } else {
